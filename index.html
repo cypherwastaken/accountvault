@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccountVault Products</title>
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, rgba(10, 10, 10, 1) 0%, rgba(20, 20, 20, 1) 100%);
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            max-width: 900px;
+            animation: slideIn 1s ease-in-out;
+        }
+        .product {
+            background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
+            border-radius: 12px;
+            margin: 15px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+            text-align: left;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8);
+        }
+        .product h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .product p {
+            margin: 8px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+        .device {
+            background: #444;
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 8px;
+        }
+        .price {
+            font-weight: bold;
+            background: #0078ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            margin-left: auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>AccountVault</h1>
+    <div class="product-list">
+        <div class="product">
+            <h2>Random Fortnite Accounts</h2>
+            <p>Guaranteed 1-10 Skins <span class="price">$5.00</span></p>
+            <p>Guaranteed 10-20 Skins <span class="price">$9.00</span></p>
+            <p>Guaranteed 20-35 Skins <span class="price">$14.00</span></p>
+            <p>Guaranteed 35-50 Skins <span class="price">$21.00</span></p>
+        </div>
+        <div class="product">
+            <h2>Roblox Accounts</h2>
+            <p>2020-2022 Account <span class="price">$6.00</span></p>
+            <p>Bladeball Random Account <span class="price">$6.00</span></p>
+            <p>Random Stacked Fisch Account <span class="price">$6.00</span></p>
+            <p>2008-2012 Account <span class="price">$7.00</span></p>
+            <p>Random 30-Day Account <span class="price">$2.00</span></p>
+        </div>
+        <div class="product">
+            <h2>GTA Online Accounts</h2>
+            <p><span class="device">PS5</span> Random Stacked Account <span class="price">$7.00</span></p>
+            <p><span class="device">XB1</span> Random Stacked Account <span class="price">$7.00</span></p>
+            <p><span class="device">PS4</span> Random Stacked Account <span class="price">$7.00</span></p>
+            <p><span class="device">PC</span> Random Fresh FiveM Account <span class="price">$8.00</span></p>
+            <p><span class="device">PC</span> Random Fresh GTA V Premium Account <span class="price">$13.00</span></p>
+        </div>
+        <div class="product">
+            <h2>COD Warzone Accounts</h2>
+            <p><span class="device">PC</span> Random battle.net Account (Could have stuff) <span class="price">$6.00</span></p>
+        </div>
+    </div>
+</body>
+</html>
